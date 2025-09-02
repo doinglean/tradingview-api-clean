@@ -1,18 +1,21 @@
 {
   "name": "tradingview-api-clean",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TradingView API für N8N",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": [],
+  "keywords": ["tradingview", "api"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@mathieuc/tradingview": "^3.5.1",
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
